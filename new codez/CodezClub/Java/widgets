@@ -1,0 +1,128 @@
+-----------------------------------------------------------------------------------------
+
+<script id="mNCC" language="javascript">
+   medianet_width = "336";
+   medianet_height = "280";
+   medianet_crid = "382368505";
+   medianet_versionId = "111299";
+   (function() {
+       var isSSL = 'https:' == document.location.protocol;
+       var mnSrc = (isSSL ? 'https:' : 'http:') + '//contextual.media.net/nmedianet.js?cid=8CUHTPMT1' + (isSSL ? '&https=1' : '');
+       document.write('<scr' + 'ipt type="text/javascript" id="mNSC" src="' + mnSrc + '"></scr' + 'ipt>');
+   })();
+</script>
+
+---------------------------------------------------------------------------------------------
+
+<div class=hd>Solved Programs/Examples</div><br>
+<a class="a1" href="http://www.codezclub.com/c-solved-programs-examples-solutions/"> C Programs</a>
+
+<a class="a1" href="http://www.codezclub.com/cpp-solved-programs-problems-solutions/"> C++ Programs</a>
+
+<a class="a1" href="http://www.codezclub.com/java-solved-programs-problems-solutions/"> Java Programs</a>
+
+---------------------------------------------------------------------------------------------
+
+<div class="hd">C Solved Programs</div><br>       
+
+        <a class="a1" href="http://www.codezclub.com/c-basic-solved-programs/">C Basic</a>
+        <a class="a1" href="http://www.codezclub.com/c-number-solved-programs/">C Number</a>    
+        <a class="a1" href="http://www.codezclub.com/c-string-solved-programs/">C String</a>
+        <a class="a1" href="http://www.codezclub.com/c-arrays-solved-programs/">C Array</a>
+        <a class="a1" href="http://www.codezclub.com/c-matrix-solved-programs/">C Matrix</a>
+        <a class="a1" href="http://www.codezclub.com/c-pattern-solved-programs/">C Pattern</a>
+        <a class="a1" href="http://www.codezclub.com/c-sorting-solved-programs/">C Sorting</a>
+        <a class="a1" href="http://www.codezclub.com/c-recursion-solved-programs/">C Recursion</a>
+        <a class="a1" href="http://www.codezclub.com/c-pointer-solved-programs/">C Pointer</a>
+        <a class="a1" href="http://www.codezclub.com/c-graphic-solved-programs/">C Graphic</a>
+        <a class="a1" href="http://www.codezclub.com/c-file-handling-solved-programs/">C File handling</a>
+        <a class="a1" href="http://www.codezclub.com/c-advance-solved-programs/">C Advance</a>
+      
+----------------------------------------------------------------------------------------------
+
+<div class="hd">C++ Solved Programs</div><br>   
+     
+        <a class="a1" href="http://www.codezclub.com/cpp-solved-programs-problems-solutions/cpp-basic-solved-programs-solutions/">C++ Basic</a>
+        <a class="a1" href="http://www.codezclub.com/cpp-solved-programs-problems-solutions/cpp-number-solved-programs-examples-solutions/">C++ Number</a>    
+        <a class="a1" href="http://www.codezclub.com/cpp-solved-programs-problems-solutions/c-string-solved-programs-examples-solutions/">C++ String</a>
+        <a class="a1" href="http://www.codezclub.com/cpp-solved-programs-problems-solutions/c-arrays-solved-programs-examples-solutions/">C++ Array</a>
+        <a class="a1" href="http://www.codezclub.com/cpp-solved-programs-problems-solutions/c-functions-solved-programs-examples-solutions/">C++ Function</a>
+        <a class="a1" href="http://www.codezclub.com/cpp-solved-programs-problems-solutions/c-classes-objects-solved-programs-solutions/">C++ Class</a>
+        <a class="a1" href="http://www.codezclub.com/cpp-solved-programs-problems-solutions/c-constructor-destructor-solved-programs-solutions/">C++ Constructor</a>
+        <a class="a1" href="http://www.codezclub.com/cpp-solved-programs-problems-solutions/cpp-inheritance-solved-programs-solutions/">C++ Inheritance</a>
+        <a class="a1" href="http://www.codezclub.com/cpp-solved-programs-problems-solutions/cpp-overloading-solved-programs-solutions/">C++ Overloading</a>
+
+        <a class="a1" href="http://www.codezclub.com/cpp-solved-programs-problems-solutions/cpp-polymorphism-solved-programs-solutions/">C++ Polymorphism</a>
+
+        <a class="a1" href="http://www.codezclub.com/cpp-solved-programs-problems-solutions/cpp-file-handling-solved-programs-solutions/">C++ File Handling</a>
+
+        <a class="a1" href="http://www.codezclub.com/cpp-solved-programs-problems-solutions/cpp-template-solved-programs-solutions/">C++ Template</a>
+        
+        
+        
+-----------------------------------------------------------------------------------------------------
+
+<div class="hd">Java Solved Programs</div><br>  
+
+        <a class="a1" href="http://www.codezclub.com/java-solved-programs-problems-solutions/java-basic-solved-programs-examples-solutions/">Java Basic</a>
+        <a class="a1" href="http://www.codezclub.com/java-solved-programs-problems-solutions/java-number-solved-programs-solutions/">Java Number</a>    
+        <a class="a1" href="http://www.codezclub.com/java-solved-programs-problems-solutions/java-string-solved-programs-solutions/">Java String</a>
+        <a class="a1" href="http://www.codezclub.com/java-solved-programs-problems-solutions/java-arrays-solved-programs-solutions/">Java Arrays</a>
+        
+        
+-------------------------------------------------------------------------------------------------------
+
+
+ul.c {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;    
+    border: 1px solid #ddd;
+}
+    
+
+li.c a.c {
+    list-style: none;
+    color: #3593e5;
+    padding: 12px;
+     display: block;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none;
+    
+}
+
+li a.c:hover {
+    background-color: #3593e5;
+    color: white;
+}  
+
+a.a1:link, a.a1:visited {	 	 
+ background-color:#FF7D45;	 	 
+ padding: 8px 6px 8px 5px;	 	 
+ color: white;	 	 
+ margin-left: 2px;	 	 
+ margin-right: 2px;	 	 
+ margin-bottom: 8px;	 	 
+ text-align: center; 	 	 
+ text-decoration: none;	 	 
+ display: inline-block;	 	 
+	    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}	
+
+a.a1:hover {	 	 
+     background-color: white;
+    color: #FF7D45;
+}
+
+.hd {
+    font-size: 140%;
+    color: #1992fc;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+

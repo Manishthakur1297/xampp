@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1250">
+<title>LeFiestus - Registration</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+<script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+
+<body>
+
+	
+	<div id="contact">
+    
+
+			<h1>Registration Form</h1>
+
+			
+			<fieldset>
+
+			<legend>Please fill in the following form to get Registered</legend>
+
+			<form method="post" action="">
+
+			<label for=name accesskey=U><span class="required">*</span> Your Name</label>
+			<input name="name" type="text" id="name" size="30" value="" />
+
+			<br />
+			<label for=phone accesskey=P><span class="required">*</span> Phone</label>
+			<input name="phone" type="text" id="phone" size="30" value="" />	
+			
+			<br />
+			<label for=email accesskey=E><span class="required">*</span> Email</label>
+			<input name="email" type="text" id="email" size="30" value="" />
+
+			<br />
+			<label for=cid accesskey=I><span class="required">*</span> College Id</label>
+			<input name="cid" type="text" id="cid" size="30" value="" />		
+
+			<br />
+			<label for=cname accesskey=C><span class="required">*</span> College Name</label>
+			<input name="cname" type="text" id="cname" size="30" value="" />
+
+			
+			<br />
+
+			<label for=subject accesskey=S><span class="required">*</span> Club</label>
+			<select name="subject" id="subject">
+				<option value="Cultural">Cultural</option>
+				<option value="Sports">Sports</option>
+				<option value="Movie">Movie</option>
+				<option value="Environment">Environment</option>
+				<option value="Photography">Photography</option>
+			</select>
+                         
+                        <script>
+                        $('#subject').on('change', function() {
+                        //alert( this.value ); // or $(this).val()
+
+if(this.value=="Cultural"){
+
+var newOptions = {
+  "FootLoose": "FootLoose",
+  "Lokanrtya": "Lokanrtya",
+  "Vogue": "Vogue",
+  "War of Bands": "War of Bands",
+  "Mono Danza": "Mono Danza",
+  "Mr & Miss. LeFiestus": "Mr & Miss. LeFiestus",
+  "Cupid Struck": "Cupid Struck",
+  "Jukebox": "Jukebox",
+  "LAS Vegas": "LAS Vegas",
+  "Tumse Na Ho Payega": "Tumse Na Ho Payega"
+};
+
+}
+
+if(this.value=="Sports"){
+
+var newOptions = {
+  "Bluff": "Bluff",
+  "Lucky Seven": "Lucky Seven",
+  "Bowling": "Bowling",
+  "Arm Wrestling": "Arm Wrestling",
+};
+
+}
+
+if(this.value=="Movie"){
+
+var newOptions = {
+  "Fun Mania": "Fun Mania",
+  "Crushers": "Crushers",
+  "JUIT Idol": "JUIT Idol",
+  "Tambola for Faculty": "Tambola for Faculty",
+};
+
+}
+
+if(this.value=="Environment"){
+
+var newOptions = {
+  "Taza Juego": "Taza Juego",
+  "Amor Prueba": "Amor Prueba",
+  "Unleashing The Devil Inside You?": "Unleashing The Devil Inside You?",
+};
+
+}
+
+if(this.value=="Photography"){
+
+var newOptions = {
+  "Photo Contest": "Photo Contest",
+};
+
+}
+
+var $el = $("#event");
+$el.empty();
+$.each(newOptions, function(value,key) {
+  $el.append($("<option></option>")
+     .attr("value", value).text(key));
+});
+                        
+                        });
+                        </script>
+                       
+                        <BR>
+
+			<label for=event accesskey=E><span class="required">*</span> Event</label>
+			<select name="event" id="event">
+  <option value="FootLoose">FootLoose</option>
+  <option value="Lokanrtya">Lokanrtya</option>
+  <option value="Vogue">Vogue</option>
+  <option value="War of Bands">War of Bands</option>
+  <option value="Mono Danza">Mono Danza</option>
+  <option value="Mr & Miss. LeFiestus">Mr & Miss. LeFiestus</option>
+  <option value="Cupid Struck">Cupid Struck</option>
+  <option value="Jukebox">Jukebox</option>
+  <option value="LAS Vegas">LAS Vegas</option>
+  <option value="Tumse Na Ho Payega">Tumse Na Ho Payega</option>
+			</select>
+			<hr />
+
+			<p><span class="required">*</span> Are you human?</p>
+
+			<div class="g-recaptcha" data-sitekey="6LesYxwTAAAAAEGvJsd1KX-SHS1Ii88kyv0AboIS"></div>
+<br /><br />
+                        <input type="checkbox" name="tnc" value="yes"> <b>I Have Read the <a href="TNC.pdf" target="__blank">Terms and Conditions</a> & Comply by Them.</b><br>
+                   
+			<input name="contactus" type="submit" class="submit" id="contactus" value="Submit" />
+
+			</form>
+
+			</fieldset>
+
+
+
+	
+	</div>
+    
+</body>
+</html>

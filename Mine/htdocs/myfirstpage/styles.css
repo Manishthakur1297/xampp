@@ -1,0 +1,186 @@
+body
+{
+background-color:lightblue;
+
+}
+
+
+header
+{
+ background-color:lightgreen;
+ margin-botttom:30px;
+ box-shadow:10px 10px 5px #888888;
+  padding:10px;
+}
+
+
+.container
+{
+ width:1350px;
+ margin: 0 auto;
+ background-color:lightgray;
+}
+
+
+.nav_menu{
+list-style:none;
+margin:0;
+padding:10px;
+}
+
+
+.nav_menu li
+{
+ min-width:10em;
+ float:left;
+ margin-right:0.5em;
+ text-align:center;
+
+ }
+
+ .nav_menu li a:link,
+ .nav_menu li a:visited
+ {
+  background-color:skyblue;
+  display:block;
+  padding:1em;
+  text-decoration:none;
+  font-weight:bold;
+  margin:0 0 0.6em 0;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:20px;
+  box-shadow:3px 3px 3px 3px rgba(123,123,123,0.6);
+ }
+
+
+ .nav_menu li a:hover
+ {
+  background-color:aquamarine;
+  -webkit-transform:scale(1.5,1.5);
+  -ms-transform:scale(1.5,1.5);
+  transform:scale(1.5,1.5);
+ }
+
+
+ .nav_menu a
+ {
+  display:block;
+  width:80px;
+  box-shadow:10px 10px 5px #888888;
+ }
+
+
+
+ #mainbody
+ {
+  background-color:lightyellow;
+
+ }
+
+
+ #welcomeDiv
+ {
+  margin-top:10px;
+  background-color:#e8e8e8;
+  float:left;
+  width:76%;
+  margin-right:20px;
+  padding:10px;
+  box-shadow:10px 10px 5px #888888;
+ }
+
+
+ #newsletter
+ {
+  margin-top:10px;
+  margin-left:10px;
+  background-color:#e8e8e8;
+  float:left;
+  padding:10px;
+  height:105px;
+  width:18%;
+  margin-bottom:10px;
+  font-weight:bold;
+  box-shadow:10px 10px 5px #888888;
+ }
+
+
+ #leftdiv
+ {
+   margin-left:8px;
+  background-color:#e8e8e8;
+  float:left;
+  width:45%;
+  padding:10px;
+  border:0.1px solid white;
+  box-shadow:10px 10px 5px #888888;
+  margin-bottom:10px;
+  height:320px;
+ }
+
+
+ #leftdiv img
+ {
+  max-height:150px;
+  max-width:150px;
+  float:right;
+ }
+
+
+ #rightdiv
+ {
+
+ height:320px;
+  background-color:#e8e8e8;
+  float:left;
+  width:45%;
+  padding:10px;
+  border:0.1px solid white;
+  box-shadow:10px 10px 5px #888888;
+  margin-bottom:20px;
+  margin-right:5px;
+  margin-left:70px;
+ }
+
+
+ #rightdiv img
+ {
+  max-height:200px;
+  max-width:250px;
+  float:right;
+ }
+
+
+ #logo
+ {
+    margin-bottom:20px;
+    box-shadow:10px 10px 5px #888888;
+ }
+
+
+ .clear
+ {
+  clear:both;
+ }
+
+
+ footer
+ {
+   margin-bottom:20px;
+  height:50px;
+  background-color:black;
+  color:white;
+  text-align:center;
+  padding-right:20px;
+  padding-top:15px
+  box-shadow:10px 10px 5px #888888;
+ }
+
+
+ p
+ {
+  font-weight:bold;
+  font-family:Times New Roman;
+  //font-family:Arnoldboecklin,fantasy;
+ }

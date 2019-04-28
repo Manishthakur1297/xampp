@@ -1,0 +1,32 @@
+.navbar a{
+ color:white;
+
+}   
+
+.nav li a:hover{
+ background:orange; 
+}
+
+.navbar-custom{
+ position:absolute;
+ top:0;
+ width:100%;
+
+}
+.navbar-header a{
+ font-size:25px;
+}
+
+header{
+ height:800px;
+ padding:100px 50px;
+ color:white;
+
+
+}
+
+
+header h1{
+ font-size:50px;
+
+}

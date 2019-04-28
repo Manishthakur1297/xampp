@@ -1,0 +1,818 @@
+<!DOCTYPE HTML>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Nakash Aziz - LeFiestus'16</title>
+	<link rel="shortcut icon" href="../favicon.ico" />
+	<link rel="stylesheet" href="../assets/css/Single_Event/main.css"> 
+	<link rel="stylesheet" href="../assets/css/Single_Event/jquery.mCustomScrollbar.css" />
+	<style type="text/css">
+		.contact-list{
+			margin: 0
+		}
+		.navigation-list{
+			position: absolute;
+			bottom: 3em;
+			margin-left: 15%;
+		}
+		.codrops-section{
+			/*margin: 0 auto;*/
+			/*padding: 10em 3em;*/
+			text-align: center;
+		}
+		*,
+		*:after,
+		*::before {
+		    -webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Raleway', sans-serif;
+		}
+
+		 .nav-a{
+			position: relative;
+			display: inline-block;
+			/*margin: 15px 25px;*/
+			outline: none;
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			/*letter-spacing: 1px;*/
+			/*font-weight: 400;*/
+			text-shadow: 0 0 1px rgba(255,255,255,0.3);
+			/*font-size: 1.35em;*/
+		}
+
+		nav a:hover,
+		nav a:focus {
+			outline: none;
+		}
+		.cl-effect-7 a {
+			margin: 0 10px;
+			padding: 6px 10px 6px;
+			color: #ffffff;
+			text-shadow: none;
+			font-weight: 700;
+		}
+
+		.cl-effect-7 a::before,
+		.cl-effect-7 a::after {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background: #fff;
+			content: '';
+			-webkit-transition: -webkit-transform 0.3s;
+			-moz-transition: -moz-transform 0.3s;
+			transition: transform 0.3s;
+			-webkit-transform: scale(0.85);
+			-moz-transform: scale(0.85);
+			transform: scale(0.85);
+		}
+
+		.cl-effect-7 a::after {
+			opacity: 0;
+			-webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+			-moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
+			transition: top 0.3s, opacity 0.3s, transform 0.3s;
+		}
+
+		.cl-effect-7 a:hover::before,
+		.cl-effect-7 a:hover::after,
+		.cl-effect-7 a:focus::before,
+		.cl-effect-7 a:focus::after {
+			-webkit-transform: scale(1);
+			-moz-transform: scale(1);
+			transform: scale(1);
+		}
+
+		.cl-effect-7 a:hover::after,
+		.cl-effect-7 a:focus::after {
+			top: 0%;
+			opacity: 1;
+		}
+		.cl-effect-13 a {
+			margin: 0 10px;
+			padding: 6px 10px 6px;
+			-webkit-transition: color 0.3s;
+			-moz-transition: color 0.3s;
+			transition: color 0.3s;
+		}
+
+		.cl-effect-13 a::before {
+			position: absolute;
+			top: 70%;
+			left: 50%;
+			color: transparent;
+			content: '•';
+			text-shadow: 0 0 transparent;
+			font-size: 0.6em;
+			-webkit-transition: text-shadow 0.3s, color 0.3s;
+			-moz-transition: text-shadow 0.3s, color 0.3s;
+			transition: text-shadow 0.3s, color 0.3s;
+			-webkit-transform: translateX(-50%);
+			-moz-transform: translateX(-50%);
+			transform: translateX(-50%);
+			pointer-events: none;
+		}
+
+		.cl-effect-13 a:hover::before,
+		.cl-effect-13 a:focus::before {
+			color: #fff;
+			text-shadow: 10px 0 #fff, -10px 0 #fff;
+		}
+
+		.cl-effect-13 a:hover,
+		.cl-effect-13 a:focus {
+			
+		}
+
+		.content-table{
+			height: 60vh;
+			/*padding: 1em;*/
+			margin-bottom: 0
+		}
+		.project-title{
+			padding-top: 1.3em;
+			color: #FFFFFF;
+			font-family: gamond;
+		}
+		.project-text{
+			color: #FFFFFF;
+		}
+		.info-para{
+			padding: 1em;
+			text-align: justify;
+		}
+		.rules-list{
+			text-align: justify;
+		}
+		.rules-div{
+			padding: 1em;
+			height: 45vh;
+			overflow-y:scroll;
+			overflow-y:auto;
+			border: none;
+		}
+		.contact-item{
+			padding: 0 0.7em
+		}
+		.project-title, .info-para, .rules-list, .header-title, .nav-label, .cl-effect-7, .btn, .contact-item, .project-text{
+			font-family: Garamonded;
+		}
+		@font-face {
+				font-family: ER;
+				src: url(../assets/font/Engagement-Regular.woff);
+			}
+		  @font-face {
+				font-family: J;
+				src: url(../assets/font/JosefinSans-Regular.woff);
+			}
+		.left-text {
+			text-align : left;
+		}
+		.contact-item{
+			width: 25%;
+		}
+	</style>
+	<script type="text/javascript">
+
+		function display_function(a){
+			var id = a.id;
+			console.log(id);
+			id_1 = id[1];
+			id_2 = id[2];
+			var temp = show_var[id_1-1];
+			console.log(temp);
+			show_var[id_1-1]=id_2;
+			temp = id_1 + '' + temp;
+			console.log(temp);
+			a = document.getElementById(temp);
+			// console.log(a);
+			a.style["display"]="none";
+			b = document.getElementById(id_1+''+id_2);
+			// console.log(b);
+			b.style["display"]="block";
+		}
+	</script>
+	<!-- // <script src="../assets/vendor/js/modernizr.custom.js"></script> -->
+	<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="../assets/js/Single_Event/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript">
+		(function($){
+	        $(window).load(function(){
+	            $(".rules-div").mCustomScrollbar({
+	            	theme: "rounded-dots",
+	            	scrollButtons:{
+			        	enable:true
+			        }
+	            });
+	        });
+	    })(jQuery);
+	</script>
+
+</head>
+<body onload="initial_function()">
+	<header class="header">
+		<img src="azizbox.png" width="280"/>
+		
+		<button class="header-btn btn" id="btn-contact-open" style="margin-top:2%;display:none;">
+		</button>
+		<button class="header-btn btn" style="margin-top:2%; margin-right: 10%;display:none;">
+		</button>
+	
+	</header>
+	<nav class="nav" id="nav">
+		<div class="table">
+			<div class="cell2">
+				<ul class="nav-list">
+					<i class="i dot-clone" id="dot"></i>
+					
+					<li class="nav-item">
+						<a href="/cb/index.html#about" data-title="about" class="nav-link">
+							<i class="i dot"></i>
+							<span class="nav-label">About</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="/cb/index.html#jabra" data-title="jabra" class="nav-link">
+							<i class="i dot"></i>
+							<span class="nav-label">Jabra Fan</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="/cb/index.html#selfie" data-title="selfie" class="nav-link">
+							<i class="i dot"></i>
+							<span class="nav-label">Selfie Le Le Re</span>
+						</a>
+					</li>					
+	
+
+
+					<li class="nav-item">
+						<a href="/cb/index.html#saree" data-title="saree" class="nav-link">
+							<i class="i dot"></i>
+							<span class="nav-label">Saree Ke Fall Sa</span>
+						</a>
+					</li>	
+
+
+					<li class="nav-item">
+						<a href="/cb/index.html#pungi" data-title="pungi" class="nav-link">
+							<i class="i dot"></i>
+							<span class="nav-label">Pungi</span>
+						</a>
+					</li>	
+
+
+					<li class="nav-item">
+						<a href="/cb/index.html#live" data-title="live" class="nav-link">
+							<i class="i dot"></i>
+							<span class="nav-label">Live</span>
+						</a>
+					</li>	
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<nav class="nav-next">
+		<button type="button" id="btn-next" class="btn i-down">
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="16" height="10" viewBox="0 0 16 10" enable-background="new 0 0 16 10" xml:space="preserve">
+				<polygon points="14 0 8 6 2 0 0 2 8 10 16 2 "/>
+			</svg>
+			<span class="btn-bg"></span>
+			<span class="btn-bg btn-bg-mask"></span>
+		</button>
+	</nav>
+	<main class="main container" id="main">
+		<article
+			class="project" id="about"
+			data-bg="#2F0F1A"
+			data-pattern="#2F0F1A"
+			data-main="#404247"
+			data-secondary="#FFFFFF"
+			data-sitetitle="#FFFFFF"
+			data-btncontact="#FFFFFF"
+			data-logo="#515869">
+			<div class="project-overlay">
+				<div class="left">
+					<figure
+					class="lazy project-fig"
+					style=" background-position: center center; background-color: B23446;"
+							data-src=        "aziz.jpg">
+						<img
+						class="lazy project-img"
+						src="aziz.jpg"
+
+							data-src=        "aziz.jpg"
+						alt="Resanova"
+						width="1100"
+						height="1100">
+					</figure>
+				</div>
+			</div>
+			<div class="project-mask">
+				<div class="left">
+					<figure
+					class="lazy project-fig"
+					style=" background-position: center center; background-color: B23446;"
+					data-src-larger= ""
+					data-src-large=  ""
+					data-src-normal= ""
+					data-src-medium= ""
+					data-src-small=  ""
+					data-src=        "">
+						<img
+						class="lazy project-img"
+						src="../assets/img/layout/blank.html"
+						data-src-larger= ""
+						data-src-large=  ""
+						data-src-normal= ""
+						data-src-medium= ""
+						data-src-small=  ""
+						data-src=        ""
+						alt="IXO"
+						width="1100"
+						height="1100">
+					</figure>
+				</div>
+			</div>
+			<div class="project-content" style="background-image:url(../assets/img/events/bg.jpg);background-size:cover;">
+				<div class="right">
+					<h2 class="project-title" style="font-family:ER;">About</h2>
+					<img src="../assets/img/events/border.png" width="100%"/>
+					<div class="table content-table">
+						<div class="cell data-cell">
+							<div>
+								<div class="project-text left-text content-table rules-div" style="font-family:J;color: #FFFFFF;" id="12">
+									<p class="rules-list" style="font-family:J;">
+Nakash Aziz is an Indian playback singer and music composer. He has assisted the legendary composer A. R. Rahman on films like Highway, Raanjhanaa,Rockstar, Delhi 6 and I in Hindi. He is popularly known for playback of songs like "Sari Ke Fall Sa" and "Gandi Baat" from the film R... Rajkumar (2013) and "Dhating Nach" from film Phata Poster Nikhla Hero (2013); all picturized on Shahid Kapoor. Nakash is originally from Moodbidri, a small town near Mangalore, Karnataka. He belongs to a family of singers. He worked as music composer for TV serials before becoming a playback singer. JYC presenting him for the first time in JUIT .
+<BR>
+Top 8 Songs :-<BR>
+1. "Selfie Le Le Re" - Bajrangi Bhaijaan<BR>
+2. "Jabra Fan (Fan Anthem)" - Fan<BR>
+3. "Saree Ke Fall Sa (Touch Karke)" - R... Rajkumar<BR>
+4. "Pungi" - Agent Vinod<BR>
+5. "Second Hand Jawani"<BR>
+6. "Afghan Jalebi"<BR>
+7. "Dhating Naach"<BR>
+8. "Gandi Baat"<BR>
+									
+</p>
+								</div>
+								
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</article>
+		
+		
+		
+
+
+		<article
+			class="project" id="jabra"
+			data-bg="#2F0F1A"
+			data-pattern="#2F0F1A"
+			data-main="#404247"
+			data-secondary="#FFFFFF"
+			data-sitetitle="#FFFFFF"
+			data-btncontact="#FFFFFF"
+			data-logo="#515869">
+			<div class="project-overlay">
+				<div class="left">
+					<figure
+					class="lazy project-fig"
+					style=" background-position: center center; background-color: B23446;"
+							data-src=        "aziz.jpg">
+						<img
+						class="lazy project-img"
+						src="aziz.jpg"
+							data-src=        "aziz.jpg"
+						alt="Resanova"
+						width="1100"
+						height="1100">
+					</figure>
+				</div>
+			</div>
+			<div class="project-mask">
+				<div class="left">
+					<figure
+					class="lazy project-fig"
+					style=" background-position: center center; background-color: B23446;"
+					data-src-larger= ""
+					data-src-large=  ""
+					data-src-normal= ""
+					data-src-medium= ""
+					data-src-small=  ""
+					data-src=        "">
+						<img
+						class="lazy project-img"
+						src="../assets/img/layout/blank.html"
+						data-src-larger= ""
+						data-src-large=  ""
+						data-src-normal= ""
+						data-src-medium= ""
+						data-src-small=  ""
+						data-src=        ""
+						alt="IXO"
+						width="1100"
+						height="1100">
+					</figure>
+				</div>
+			</div>
+			<div class="project-content" style="background-image:url(../assets/img/events/bg.jpg);background-size:cover;">
+				<div class="right">
+					<h2 class="project-title" style="font-family:ER;">Jabra Fan</h2>
+					<img src="../assets/img/events/border.png" width="100%"/>
+					<div class="table content-table">
+						<div class="cell data-cell">
+							<div>
+								
+							<p>
+<iframe width="500" height="315" src="https://www.youtube.com/embed/d4_szl5EEww" frameborder="0" allowfullscreen></iframe>
+</p>
+	
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</article>	
+
+		<article
+			class="project" id="selfie"
+			data-bg="#2F0F1A"
+			data-pattern="#2F0F1A"
+			data-main="#404247"
+			data-secondary="#FFFFFF"
+			data-sitetitle="#FFFFFF"
+			data-btncontact="#FFFFFF"
+			data-logo="#515869">
+			<div class="project-overlay">
+				<div class="left">
+					<figure
+					class="lazy project-fig"
+					style=" background-position: center center; background-color: B23446;"
+							data-src=        "aziz.jpg">
+						<img
+						class="lazy project-img"
+						src="aziz.jpg"
+							data-src=        "aziz.jpg"
+						alt="Resanova"
+						width="1100"
+						height="1100">
+					</figure>
+				</div>
+			</div>
+			<div class="project-mask">
+				<div class="left">
+					<figure
+					class="lazy project-fig"
+					style=" background-position: center center; background-color: B23446;"
+					data-src-larger= ""
+					data-src-large=  ""
+					data-src-normal= ""
+					data-src-medium= ""
+					data-src-small=  ""
+					data-src=        "">
+						<img
+						class="lazy project-img"
+						src="../assets/img/layout/blank.html"
+						data-src-larger= ""
+						data-src-large=  ""
+						data-src-normal= ""
+						data-src-medium= ""
+						data-src-small=  ""
+						data-src=        ""
+						alt="IXO"
+						width="1100"
+						height="1100">
+					</figure>
+				</div>
+			</div>
+			<div class="project-content" style="background-image:url(../assets/img/events/bg.jpg);background-size:cover;">
+				<div class="right">
+					<h2 class="project-title" style="font-family:ER;">Selfie Le Le Re</h2>
+					<img src="../assets/img/events/border.png" width="100%"/>
+					<div class="table content-table">
+						<div class="cell data-cell">
+							<div>
+								
+							<p>
+<iframe width="500" height="315" src="https://www.youtube.com/embed/TITGBTGJZS8" frameborder="0" allowfullscreen></iframe>
+</p>
+	
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</article>	
+
+		<article
+			class="project" id="saree"
+			data-bg="#2F0F1A"
+			data-pattern="#2F0F1A"
+			data-main="#404247"
+			data-secondary="#FFFFFF"
+			data-sitetitle="#FFFFFF"
+			data-btncontact="#FFFFFF"
+			data-logo="#515869">
+			<div class="project-overlay">
+				<div class="left">
+					<figure
+					class="lazy project-fig"
+					style=" background-position: center center; background-color: B23446;"
+							data-src=        "aziz.jpg">
+						<img
+						class="lazy project-img"
+						src="aziz.jpg"
+							data-src=        "aziz.jpg"
+						alt="Resanova"
+						width="1100"
+						height="1100">
+					</figure>
+				</div>
+			</div>
+			<div class="project-mask">
+				<div class="left">
+					<figure
+					class="lazy project-fig"
+					style=" background-position: center center; background-color: B23446;"
+					data-src-larger= ""
+					data-src-large=  ""
+					data-src-normal= ""
+					data-src-medium= ""
+					data-src-small=  ""
+					data-src=        "">
+						<img
+						class="lazy project-img"
+						src="../assets/img/layout/blank.html"
+						data-src-larger= ""
+						data-src-large=  ""
+						data-src-normal= ""
+						data-src-medium= ""
+						data-src-small=  ""
+						data-src=        ""
+						alt="IXO"
+						width="1100"
+						height="1100">
+					</figure>
+				</div>
+			</div>
+			<div class="project-content" style="background-image:url(../assets/img/events/bg.jpg);background-size:cover;">
+				<div class="right">
+					<h2 class="project-title" style="font-family:ER;">Saree Ke Fall Sa</h2>
+					<img src="../assets/img/events/border.png" width="100%"/>
+					<div class="table content-table">
+						<div class="cell data-cell">
+							<div>
+								
+							<p>
+<iframe width="500" height="315" src="https://www.youtube.com/embed/EkxOXF9J77w" frameborder="0" allowfullscreen></iframe>
+</p>
+	
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</article>
+
+	
+		
+		
+
+		<article
+			class="project" id="pungi"
+			data-bg="#2F0F1A"
+			data-pattern="#2F0F1A"
+			data-main="#404247"
+			data-secondary="#FFFFFF"
+			data-sitetitle="#FFFFFF"
+			data-btncontact="#FFFFFF"
+			data-logo="#515869">
+			<div class="project-overlay">
+				<div class="left">
+					<figure
+					class="lazy project-fig"
+					style=" background-position: center center; background-color: B23446;"
+							data-src=        "aziz.jpg">
+						<img
+						class="lazy project-img"
+						src="aziz.jpg"
+							data-src=        "aziz.jpg"
+						alt="Resanova"
+						width="1100"
+						height="1100">
+					</figure>
+				</div>
+			</div>
+			<div class="project-mask">
+				<div class="left">
+					<figure
+					class="lazy project-fig"
+					style=" background-position: center center; background-color: B23446;"
+					data-src-larger= ""
+					data-src-large=  ""
+					data-src-normal= ""
+					data-src-medium= ""
+					data-src-small=  ""
+					data-src=        "">
+						<img
+						class="lazy project-img"
+						src="../assets/img/layout/blank.html"
+						data-src-larger= ""
+						data-src-large=  ""
+						data-src-normal= ""
+						data-src-medium= ""
+						data-src-small=  ""
+						data-src=        ""
+						alt="IXO"
+						width="1100"
+						height="1100">
+					</figure>
+				</div>
+			</div>
+			<div class="project-content" style="background-image:url(../assets/img/events/bg.jpg);background-size:cover;">
+				<div class="right">
+					<h2 class="project-title" style="font-family:ER;">Pungi</h2>
+					<img src="../assets/img/events/border.png" width="100%"/>
+					<div class="table content-table">
+						<div class="cell data-cell">
+							<div>
+								
+							<p>
+<iframe width="500" height="315" src="https://www.youtube.com/embed/Sjh1PQ9B73Y" frameborder="0" allowfullscreen></iframe>
+</p>
+	
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</article>
+
+		<article
+			class="project" id="live"
+			data-bg="#2F0F1A"
+			data-pattern="#2F0F1A"
+			data-main="#404247"
+			data-secondary="#FFFFFF"
+			data-sitetitle="#FFFFFF"
+			data-btncontact="#FFFFFF"
+			data-logo="#515869">
+			<div class="project-overlay">
+				<div class="left">
+					<figure
+					class="lazy project-fig"
+					style=" background-position: center center; background-color: B23446;"
+							data-src=        "aziz.jpg">
+						<img
+						class="lazy project-img"
+						src="aziz.jpg"
+							data-src=        "aziz.jpg"
+						alt="Resanova"
+						width="1100"
+						height="1100">
+					</figure>
+				</div>
+			</div>
+			<div class="project-mask">
+				<div class="left">
+					<figure
+					class="lazy project-fig"
+					style=" background-position: center center; background-color: B23446;"
+					data-src-larger= ""
+					data-src-large=  ""
+					data-src-normal= ""
+					data-src-medium= ""
+					data-src-small=  ""
+					data-src=        "">
+						<img
+						class="lazy project-img"
+						src="../assets/img/layout/blank.html"
+						data-src-larger= ""
+						data-src-large=  ""
+						data-src-normal= ""
+						data-src-medium= ""
+						data-src-small=  ""
+						data-src=        ""
+						alt="IXO"
+						width="1100"
+						height="1100">
+					</figure>
+				</div>
+			</div>
+			<div class="project-content" style="background-image:url(../assets/img/events/bg.jpg);background-size:cover;">
+				<div class="right">
+					<h2 class="project-title" style="font-family:ER;">Live</h2>
+					<img src="../assets/img/events/border.png" width="100%"/>
+					<div class="table content-table">
+						<div class="cell data-cell">
+							<div>
+								
+							<p>
+<iframe width="500" height="315" src="https://www.youtube.com/embed/jsJNjjd3FbA" frameborder="0" allowfullscreen></iframe>
+</p>
+	
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</article>
+	
+    </main>
+	<section class="contact" id="contact">
+		<div class="contact-bg" id="contact-bg"></div>
+		<article class="contact-content">
+			<div class="table">
+				<div class="cell2">
+					<!-- <header class="contact-header">
+						<h3 class="contact-baseline">
+							<span>C</span>
+							<span>O</span>
+							<span>N</span>
+							<span>T</span>
+							<span>A</span>
+							<span>C</span>
+							<span>T</span>
+							<span>&nbsp;</span>
+							<span>U</span>
+							<span>S</span>
+						</h3>
+					</header> -->
+					<!-- <p class="contact-desc"></p> -->
+					<address class="contact-info">
+						<ul class="contact-list">
+							<li class="contact-item">
+								<img src="../assets/img/dance/cordi.png" style="width:50%">  
+							</li>
+						</ul>
+
+                    </address>
+					<!-- <div class="contact-info" style="width:100%">
+						<div style="width:50%; float:left">
+							<img src="../assets/img/dance/cordi.png">
+						</div>
+						<div style="width:50%; float:right"></div>
+					</div> -->
+					<button class="btn contact-btn" id="btn-contact-close">
+						<i class="btn-placeholder">Contact</i>
+						<i class="btn-label">Back</i>
+						<span class="btn-bg"></span>
+						<span class="btn-bg"></span>
+					</button>
+				</div>
+			</div>
+		</article>
+	</section>
+	<canvas class="canvas" id="canvas" resize="true" keepalive="true" hidpi="on"></canvas>
+	<script src="../assets/js/Single_Event/main.js"></script>
+	<!-- make script defer once uploaded on the server -->
+	<script type="text/javascript">
+		var number_of_projects;
+		var show_var = [];
+		function initial_function(){
+			a = document.getElementsByClassName("project")
+			number_of_projects = a.length;
+			console.log(number_of_projects);
+			for(i=0;i<number_of_projects;i++){
+				window.show_var[i] = '1';
+			}
+			console.log(window.show_var);
+		}
+	</script>
+</body>
+
+</html>

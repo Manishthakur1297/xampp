@@ -1,0 +1,111 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1">
+    <title>CodezWorld</title>
+    <link rel="icon" href="img/coding.png" type="image/png">
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+   <div class="navbar-header">
+              
+
+            <img src="img/coding.png" class="navbar-brand">
+            <a class="navbar-brand" href="index.html">Codezworld</a>
+        </div>
+         
+    <ul class="topnav navbar-right">
+   <li> <a href="php/register.php"><button class="btn btn-warning li_login">Login/Signup</button></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+               
+                <li><a href="contact.html">Contact Us</a></li>
+
+                <li>
+                    <div class="input-text">
+                        <input placeholder="Search here.." type="text" name="search">
+                    </div>
+                    <button class="btn">Search</button>
+
+                </li>
+            
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+</ul>
+      
+    </nav>
+
+ <section class="main-section" id="contact" style="background:rgba(211, 230, 239, 0.41);">
+        <div>
+            <form method="POST" action="php/contact.php" class="col-md-6 col-md-offset-3">
+                <fieldset>
+                    <legend class="text-center" style="color:#bba1eb">Contact Us Today!</legend>
+                    <div class="form-group">
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <input class="form-control" placeholder="Enter your Name" type="text" name="first_name" autofocus required minlength="2">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+
+                            <input class="form-control" placeholder="Enter your Email" type="email"  name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <input class="form-control" placeholder="Subject" type="text" name="subject" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-comment"></i></span>
+
+                            <textarea class="form-control" rows="10" name="message" placeholder="Comments" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-warning btn-block send" name="login">Send 
+                      
+                        
+                        </button>
+
+                </fieldset>
+            </form>
+     </div>
+     <div class="clear"></div>
+          <footer class="footer">
+        <div class="container ">
+            <div class="footer-logo">
+                <span class="copyright">Copyright © 2016 Codezworld Theme By <a href="#">Mj Thakur</a>.</span>
+            </div>
+        </div>
+    </footer>
+
+    </section>
+  
+    
+ <script>
+function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}
+</script>
+    </body>
+    </html>

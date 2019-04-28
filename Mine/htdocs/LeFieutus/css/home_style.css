@@ -1,0 +1,172 @@
+		body {
+			overflow: hidden;
+			background-color: #000;
+		}
+
+		/* Preloader */
+
+		#preloader {
+		    position:fixed;
+		    top:0;
+		    left:0;
+		    right:0;
+		    bottom:0;
+		    background-color:#E9D67B; 
+		    z-index:99; 
+		}
+
+		#status {
+		    /*width:40vw;*/
+		    /*height:200px;*/
+		    position:absolute;
+		   /* left:50%; 
+		    top:50%; */
+		    /*background-image:url('assets/homepage/img/typeface.png'); */
+		    background-size: cover;
+		    background-repeat:no-repeat;
+		    background-position:center;
+		    margin:-100px 0 0 -100px; 
+		}
+		.pace {
+		  -webkit-pointer-events: none;
+		  pointer-events: none;
+
+		  -webkit-user-select: none;
+		  -moz-user-select: none;
+		  user-select: none;
+
+		  z-index: 2000;
+		  position: fixed;
+		  margin: auto;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  height: 5px;
+		  width: 200px;
+		  background: #fff;
+		  border: 1px solid #21291f;
+
+		  overflow: hidden;
+		}
+
+		.pace .pace-progress {
+		  -webkit-box-sizing: border-box;
+		  -moz-box-sizing: border-box;
+		  -ms-box-sizing: border-box;
+		  -o-box-sizing: border-box;
+		  box-sizing: border-box;
+
+		  -webkit-transform: translate3d(0, 0, 0);
+		  -moz-transform: translate3d(0, 0, 0);
+		  -ms-transform: translate3d(0, 0, 0);
+		  -o-transform: translate3d(0, 0, 0);
+		  transform: translate3d(0, 0, 0);
+
+		  max-width: 200px;
+		  position: fixed;
+		  z-index: 2000;
+		  display: block;
+		  position: absolute;
+		  top: 0;
+		  right: 100%;
+		  height: 100%;
+		  width: 100%;
+		  background: #21291f;
+		}
+
+		.pace.pace-inactive {
+		  display: none;
+		}
+		@import "bourbon.html";
+
+		@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+
+		/*body {
+		  background: #eaeef3;
+		  font-family: 'Titillium Web';
+		}
+*/
+		/*h1 {
+		  width: 100%;
+		  text-align: center;
+		  margin-bottom: 0px;
+		  font-size: 20px;
+		}*/
+
+		.list {
+		  width: 500px;
+		  position: relative;
+		  margin: 0 auto;
+		  height: 300px;
+		  top: 0px;
+		}
+
+		
+
+		.social-ul {
+		  list-style: none;
+		  top: 100vh;
+		  position: relative;
+		  padding: 0;
+		  margin: 0;
+		  left : 150px;
+		}
+
+		.social-li {
+		  display: block;
+		  width: 10px;
+		  height: 10px;
+		  /*background: #263241;*/
+		  position: absolute;
+		  border-radius: 10px;
+		  /*border: 3px #eaeef3 solid;*/
+		  opacity: 0;
+		  cursor: pointer;
+		  padding: 0;
+		  margin: 0;
+		}
+
+		.line {
+			overflow: hidden;
+		  width: 0px;
+		  height: 1px;
+		  top: 127px;
+		  position: absolute;
+		  background: #ddd;
+		}
+
+		.image {
+		  width: 40px;
+		  height: 40px;
+		  border-radius: 30px;
+		  background: #ddd;
+		  position: absolute;
+		  top: -62px;
+		  left: -26px;
+		  
+		  background-size: cover;
+		}
+
+		.image1{
+			background-image: url('assets/homepage/img/social/fb.png');
+		}
+		.image2{
+			background-image: url('assets/homepage/img/social/google%2b.png');	
+		}
+		.image3{
+			background-image: url('assets/homepage/img/social/linkedin.png');		
+		}
+		.image4{
+			background-image: url('assets/homepage/img/social/youtube.png');	
+		}
+		.image5{
+			background-image: url('assets/homepage/img/social/twitter.png');	
+		}
+		.image6{
+			background-image: url('assets/homepage/img/social/shabdnagri.png');	
+		}
+
+		#sponsor-img{
+			transition: all 0.6s ease-in-out;
+		}

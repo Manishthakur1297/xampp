@@ -1,0 +1,110 @@
+/*
+Theme Name: Iconic One
+Custom CSS Template for Iconic One.
+*/
+
+
+ul.c {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;    
+    border: 1px solid #ddd;
+}
+    
+
+li.c a.c {
+    list-style: none;
+    color: #3593e5;
+    padding: 12px;
+     display: block;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none;
+    
+}
+
+li a.c:hover {
+    background-color: #3593e5;
+    color: white;
+}  
+
+a.a1:link, a.a1:visited {	 	 
+ background-color:#FF7D45;	 	 
+ padding: 8px 6px 8px 5px;	 	 
+ color: white;	 	 
+ margin-left: 2px;	 	 
+ margin-right: 2px;	 	 
+ margin-bottom: 8px;	 	 
+ text-align: center; 	 	 
+ text-decoration: none;	 	 
+ display: inline-block;	 	 
+	    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}	
+
+a.a1:hover {	 	 
+     background-color: white;
+    color: #FF7D45;
+}
+
+.hd {
+    font-size: 140%;
+    color: #1992fc;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+
+th {
+    text-align: center;
+    background: #FF7D45 ;
+    color: white;
+    font-weight: bold;
+}
+
+caption, th, td {
+    text-align: left;
+   
+}
+
+td a{
+     text-decoration: none;
+}
+
+td  {
+    border: 1px solid #EAEAEA;
+    padding: 10px 10px;
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    font-weight: bold;
+}
+
+table {
+    line-height: 1em;
+}
+
+table {
+    margin: 0 0 1.5em;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 0 1.5em;
+    width: 100%;
+}
+
+
+tr {
+    
+    font-size: 14px;
+}
+

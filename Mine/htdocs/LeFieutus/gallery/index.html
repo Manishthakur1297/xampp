@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	     
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Gallery - LeFiestus</title>
+        
+        <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/grid_horizontal_buttons_100.css" />
+        <!--[if lte IE 8 ]><link rel="stylesheet" type="text/css" href="css/ie.css" /><![endif]-->
+
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.prettyPhoto.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/jquery.thumbGallery.min.js"></script>
+        <script type="text/javascript">
+		 
+			function thumbGallerySetupDone(){
+				//function called when component is ready to receive public function calls
+				//console.log('thumbGallerySetupDone');
+			}
+		
+			function detailActivated(){
+				//function called when prettyphoto is opened (plus returned item number: i = first level, j = second level)
+				//console.log('detailActivated');
+			}
+			
+			function detailClosed(){
+				//function called when prettyphoto is closed
+				//console.log('detailClosed');
+			}
+			
+			function overThumb(i,j){
+				//function called when mouse over thumb holder (plus returned item number: i = first level, j = second level)
+				//console.log('overThumb: ', i,' , ', j);
+			}
+			
+			function outThumb(i,j){
+				//function called when mouse out thumb holder (plus returned item number: i = first level, j = second level)
+				//console.log('outThumb: ', i,' , ', j);
+			}
+			
+			jQuery(document).ready(function($) {
+					  
+				$('#componentWrapper').thumbGallery({	
+					/* GENERAL */
+					/*layoutType: grid/line */
+					layoutType: 'grid',
+					/*thumbOrientation: horizontal/vertical */
+					thumbOrientation: 'horizontal',
+					/*moveType: scroll/buttons */
+					moveType: 'buttons',
+					/*scrollOffset: how much to move scrollbar and scrolltrack off the content (enter 0 or above) */
+					scrollOffset: 0,
+					
+					/* GRID SETTINGS */
+					/*verticalSpacing:  */
+					verticalSpacing: 10,
+					/*horizontalSpacing:  */
+					horizontalSpacing: 10,
+					/*buttonSpacing: button spacing from the grid itself */
+					buttonSpacing: 10,
+					/*direction: left2right/top2bottom (direction in which boxes are listed) */
+					direction: 'left2right',
+					
+					/* INNER SLIDESHOW */
+					/*innerSlideshowDelay: slideshow delay for inner items in seconds, random value between: 'min, max', 
+					enter both number the same for equal time delay like for example 2 seconds: '2,2' */
+					innerSlideshowDelay:[2,4],
+					/*innerSlideshowOn: autoplay inner slideshow, true/false */
+					innerSlideshowOn:false
+				});	
+				
+				jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({theme:'pp_default',
+												deeplinking: false, 
+												callback: function(){detailClosed();}/* Called when prettyPhoto is closed */});	
+		   
+		   });
+		
+        </script>
+	    <style>
+body { 
+background-image:url(http://www.lefiestus16.com/assets/homepage/img/background-abcd.png);
+}
+        </style>
+  </head>
+  <body>  
+  
+  		<!-- wrapper for the whole component -->
+    	<div id="componentWrapper">
+                 
+              <div class="thumbContainer">
+                     
+                    <div class="thumbInnerContainer">
+                                                            
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(1003).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(1003).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(1020).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(1020).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(1053).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(1053).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(114).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(114).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(1658).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(1658).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(1959).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(1959).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(339).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(339).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(341).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(341).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(346).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(346).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(353).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(353).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(357).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(357).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(422).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(422).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(424).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(424).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(446).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(446).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(461).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(461).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(575).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(575).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(578).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(578).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(588).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(588).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(589).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(589).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(593).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(593).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(602).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(602).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(619).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(619).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(621).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(621).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(626).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(626).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(631).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(631).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(638).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(638).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(640).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(640).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(665).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(665).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(764).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(764).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(770).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(770).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(968).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(968).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(975).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(975).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                         <div class='thumbHolder'>  
+                             <a class="pp_content" href="750/(980).jpg" data-rel="prettyPhoto[gallery1]">
+                             <img class="thumb_hidden" src="750/(980).jpg" width="2448" height="3696"/></a>    
+                         </div>
+
+                                        
+                    </div>
+                    
+            </div>
+            
+            <div class="thumbBackward thumb_hidden"><img src="data/icons/thumb_backward.png" alt="" width="21" height="31" /></div>	
+            <div class="thumbForward thumb_hidden"><img src="data/icons/thumb_forward.png" alt="" width="21" height="31" /></div>  
+               
+        </div>
+        
+   		<!-- public function calls -->
+    	<div id='publicFunctions'>
+       		<p>PUBLIC METHODS</p><br/>
+            <ul>
+                <!-- start/stop all inner slideshows (true = start, false = stop) -->
+                <li><a href='#' onClick="jQuery.fn.thumbGallery.toggleInnerslideShow(true); return false;">start/stop all inner slideshows</a></li>
+                
+                <!-- start/stop specific inner slideshow (i = item number in html order starting from 0, true = start, false = stop) -->
+                <li><a href='#' onClick="jQuery.fn.thumbGallery.toggleInnerslideShowNum(0, true); return false;">start/stop specific inner slideshow number #</a></li>
+                
+                <!-- get Thumb Holder (retrun thumb holder, i = item number in html order starting from 0) -->
+                <li><a href='#' onClick="jQuery.fn.thumbGallery.getThumbHolder(0); return false;">get thumb holder number #</a></li>
+            </ul>
+         </div>
+  
+   
+ 
+      </body>
+</html>
